@@ -32,10 +32,9 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .5rem;
 }
