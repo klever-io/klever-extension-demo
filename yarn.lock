@@ -324,6 +324,29 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@klever/kleverweb@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@klever/kleverweb/-/kleverweb-1.0.3.tgz#f10e696384c493bf6727be93ee13fafa01780f86"
+  integrity sha512-j8mbqOW0kmfbL2cJQJ0lW1REwGRWAerPwBHpytoyett+J7zTIs33Ox2M0k8ibg9OiVKuHz6Qb5Mc/jXFp7Ybiw==
+  dependencies:
+    "@protobuf-ts/plugin" "^2.7.0"
+
+"@klever/sdk@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@klever/sdk/-/sdk-4.1.2.tgz#dab06f333a2dd72288a688cecf76f0416eb711a1"
+  integrity sha512-yKuI64OoKyLIY0yziN5BxTB/b8HHNucbKn8ScYDDnQu95YDA78didbJHhgNX2wjKwMwdAzXAmbODHUoMNzK/1w==
+  dependencies:
+    "@klever/kleverweb" "^1.0.3"
+    "@noble/ed25519" "^1.7.1"
+    bech32 "^2.0.0"
+    blakejs "^1.2.1"
+    google-protobuf "^3.21.2"
+
+"@noble/ed25519@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@noble/ed25519/-/ed25519-1.7.1.tgz#6899660f6fbb97798a6fbd227227c4589a454724"
+  integrity sha512-Rk4SkJFaXZiznFyC/t77Q0NKS4FL7TLJJsVG2V2oiEq3kJVeTdxysEe/yRWSpnWMe808XRDJ+VFh5pt/FN5plw==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -344,6 +367,42 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
+
+"@protobuf-ts/plugin-framework@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin-framework/-/plugin-framework-2.8.2.tgz#8699938576f68d01a9a937aa383db8fdcef6f64d"
+  integrity sha512-ivcJdNVB3Iee8044f8erZGBgmB6ZfQbbKyxRgDBXRVKYxsruLr432WcT5upw9autK9OnlSVLaebi8kDneFXd2g==
+  dependencies:
+    "@protobuf-ts/runtime" "^2.8.2"
+    typescript "^3.9"
+
+"@protobuf-ts/plugin@^2.7.0":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/plugin/-/plugin-2.8.2.tgz#f65f4362721e6a3bb3ce04f6d9760901e576eaa7"
+  integrity sha512-rTPxaeKBfUar8ubKxbVdv4XL6AcGA0OOgHNHFyrfODP7Epy80omwuvgFJex1YpeNFJxm/FZXXj5Z+nHuhYEqJg==
+  dependencies:
+    "@protobuf-ts/plugin-framework" "^2.8.2"
+    "@protobuf-ts/protoc" "^2.8.2"
+    "@protobuf-ts/runtime" "^2.8.2"
+    "@protobuf-ts/runtime-rpc" "^2.8.2"
+    typescript "^3.9"
+
+"@protobuf-ts/protoc@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/protoc/-/protoc-2.8.2.tgz#45809eda3037caff300b9061262444ae7ad891ec"
+  integrity sha512-1e+rOgp22ElyqRWunSc8bhatJcvRe90AGPceVn67IFYzybvfKl17vP1igHddeYkN0dzOucnOrwqn2v1jnDfE2w==
+
+"@protobuf-ts/runtime-rpc@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/runtime-rpc/-/runtime-rpc-2.8.2.tgz#8af6d5eab44e2fc92cfe9a83a5c351b5f2fcdfbe"
+  integrity sha512-vum/Y7AXdUTWGFu7dke/jCSB9dV3Oo3iVPcce3j7KudpzzWarDkEGvXjKv3Y8zJPj5waToyxwBNSb7eo5Vw5WA==
+  dependencies:
+    "@protobuf-ts/runtime" "^2.8.2"
+
+"@protobuf-ts/runtime@^2.8.2":
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/@protobuf-ts/runtime/-/runtime-2.8.2.tgz#5d5424a6ae7fb846c3f4d0f2dd6448db65bb69d6"
+  integrity sha512-PVxsH81y9kEbHldxxG/8Y3z2mTXWQytRl8zNS0mTPUjkEC+8GUX6gj6LsA8EFp25fAs9V0ruh+aNWmPccEI9MA==
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"
@@ -566,6 +625,16 @@ balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
+
+bech32@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/bech32/-/bech32-2.0.0.tgz#078d3686535075c8c79709f054b1b226a133b355"
+  integrity sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==
+
+blakejs@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/blakejs/-/blakejs-1.2.1.tgz#5057e4206eadb4a97f7c0b6e197a505042fc3814"
+  integrity sha512-QXUSXI3QVc/gJME0dBpXrag1kbzOqCjCX8/b54ntNyW6sjtoqxqRk3LTmXzaJoh71zMsDCjM+47jS7XiwN/+fQ==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -1339,6 +1408,11 @@ globby@^11.1.0:
     ignore "^5.2.0"
     merge2 "^1.4.1"
     slash "^3.0.0"
+
+google-protobuf@^3.21.2:
+  version "3.21.2"
+  resolved "https://registry.yarnpkg.com/google-protobuf/-/google-protobuf-3.21.2.tgz#4580a2bea8bbb291ee579d1fefb14d6fa3070ea4"
+  integrity sha512-3MSOYFO5U9mPGikIYCzK0SaThypfGgS6bHqrUGXG3DPHCrb+txNqeEcns1W0lkGfk0rCyNXm7xB9rMxnCiZOoA==
 
 grapheme-splitter@^1.0.4:
   version "1.0.4"
@@ -2143,6 +2217,11 @@ typescript@*:
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.4.tgz#c464abca159669597be5f96b8943500b238e60e6"
   integrity sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==
+
+typescript@^3.9:
+  version "3.9.10"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
+  integrity sha512-w6fIxVE/H1PkLKcCPsFqKE7Kv7QUwhU8qQY2MueZXWx5cPZdwFupLgKK3vntcK98BtNHZtAF4LA/yl2a7k8R6Q==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"

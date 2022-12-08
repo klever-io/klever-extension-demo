@@ -5,36 +5,39 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .container {
+  border: 1px solid purple;
+  border-radius: 6px;
+  padding: 10px;
+  width: 350px;
+  margin: 10px;
+}
+
+.flex {
   display: flex;
-  flex-direction: row;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.items-center {
   align-items: center;
-  gap: .5rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.text {
+  overflow-wrap: break-word;
+}
+
+.btn-submit {
+  background-color: purple;
+  color: white;
 }
